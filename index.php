@@ -11,7 +11,6 @@
 	if($num_rows == 1)
 	{
 		$row = pg_fetch_array($result, 0);
-		$
 	}
 ?>	
 <html> 
