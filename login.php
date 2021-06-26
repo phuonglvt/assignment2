@@ -66,9 +66,7 @@
 	<div class="wrapper">
 			<?php
 				include("header.php");
-				include("menu_ngang.php");
-				include("footer.php");
-			?>
+				include("menu_ngang.php");			?>
 			</div>
 	 <h1> Welcome to ATN shop of Phuonglvt Toy World <h1/>
 	 <body>
