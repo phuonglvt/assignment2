@@ -63,11 +63,6 @@
 			</table>
 		</center>
 	</body>
-	<div class="wrapper">
-			<?php
-				include("header.php");
-			?>
-			</div>
 	 <h1> Welcome to ATN shop of Phuonglvt Toy World <h1/>
 	 <body>
       <div align = "center">
