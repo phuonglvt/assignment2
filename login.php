@@ -50,33 +50,28 @@
 	
       <title>ATN Login Page</title>
       
-      <style type = "text/css">
-         body {
-            font-family:Arial, Helvetica, sans-serif;
-            font-size:14px;
-         }
-         label {
-            font-weight:bold;
-            width:100px;
-            font-size:14px;
-         }
-         .box {
-            border:#666666 solid 1px;
-         }
-		 h1 
-		{
-		  color: #666;
-		  margin: 20px 10px 0px;
-		  padding: 0px 30px 0px 30px;
-		  text-align: center;
-		}
-      </style>
-      
+ <link rel="stylesheet" type="text/css" href="style.css">
    </head>
-   <h1> Welcome to ATN <h1/>
+  
    
    <body bgcolor = "#FFFFFF">
-	
+		<center>
+            <table width="990px">
+                <tr>
+                    <td colspan="3"><img src="banner.jpg" width="1200px"></td>
+                </tr>
+			</table>
+		</center>
+	</body>
+	<div class="wrapper">
+			<?php
+				include("header.php");
+				include("menu_ngang.php");
+				include("footer.php");
+			?>
+			</div>
+	 <h1> Welcome to ATN shop of Phuonglvt Toy World <h1/>
+	 <body>
       <div align = "center">
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
             <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Login</b></div>
@@ -88,7 +83,18 @@
                   <label>Password  :</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = "Submit"/><br />
 				</form>
-                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>             					
+                <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div> 
+				<form action="" method="post">
+				<input type="submit" name="Main_menu"
+					value="Return menu"/> <br></br>
+				</form>
+				<?php
+					$shop = $_SESSION["shop"];
+					if(isset($_POST['Main_menu']))
+					{
+					header("Location: index.php");
+					}
+				?>
             </div>				
          </div>			
       </div>
