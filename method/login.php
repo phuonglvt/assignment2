@@ -1,5 +1,5 @@
 <?php
-require_once("./dbconnect.php");
+require_once("dbconnect.php");
 error_reporting(E_ERROR | E_PARSE);
 login();
 checkLogin();
